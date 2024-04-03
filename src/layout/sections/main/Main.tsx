@@ -19,7 +19,6 @@ export const Main = () => {
 };
 
 const StyledMain = styled.div`
-  background-color: bisque;
   min-height: 100vh;
 `;
 
