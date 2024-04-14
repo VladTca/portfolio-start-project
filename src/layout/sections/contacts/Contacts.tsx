@@ -65,9 +65,9 @@ padding:7px 15px;
         text-transform: capitalize;
     }
     
-    &:focus{
-        outline: none;
-        border-color: ${theme.colors.accent};
+    &:focus-visible{
+        outline: 1px solid ${theme.colors.borderColor}
+        
     }
     
 `;
