@@ -11,7 +11,7 @@ placeholderColor: '#495057',
 },
 
   media:{
-    mobile: "screen and(max-width: 576px)",
+    mobile: "screen and (max-width: 576px)",
     tablet: "screen and (max-width: 768px)",
 
   }
