@@ -10,12 +10,13 @@ import {IconWrapper} from "../skills/skill/Skill";
 export const Testimony = () => {
   return (
     <StyledTestimony>
-
+        <Container>
             <SectionTitle>Testimony</SectionTitle>
             <FlexWrapper direction={"column"} align={"center"}>
                 <IconWrapper><Icon iconId={"quote"}/></IconWrapper>
                 <Slider/>
             </FlexWrapper>
+        </Container>
 
     </StyledTestimony>
   );
@@ -26,7 +27,7 @@ const StyledTestimony = styled.section`
     
     
     ${IconWrapper}{
-        margin: 40px 0 72px;
+        margin: 28px 0 72px;
         
     }
     
