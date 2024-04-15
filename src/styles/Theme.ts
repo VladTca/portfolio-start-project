@@ -13,7 +13,7 @@ placeholderColor: '#495057',
   media:{
     mobile: "screen and (max-width: 576px)",
     tablet: "screen and (max-width: 768px)",
-
+    desktop: "screen and (max-width: 1140px)",
   }
 
 
