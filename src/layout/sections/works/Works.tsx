@@ -51,9 +51,11 @@ export const Works: React.FC = () => {
 
   if (currentFilterStatus === "lending") {
     filteredWorks = worksData.filter((w) => w.type === "landing");
-  } else if (currentFilterStatus === "react") {
+  }
+  if (currentFilterStatus === "react") {
     filteredWorks = worksData.filter((w) => w.type === "react");
-  } else if (currentFilterStatus === "spa") {
+  }
+  if (currentFilterStatus === "spa") {
     filteredWorks = worksData.filter((w) => w.type === "spa");
   }
 

@@ -29,7 +29,7 @@ export const Link = styled.a<{ active?: boolean }>`
     z-index: -1;
 
     ${(props) =>
-      props.active === true &&
+      props.active &&
       css<{ active?: boolean }>`
         height: 10px;
       `}

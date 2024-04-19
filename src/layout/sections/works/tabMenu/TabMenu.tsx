@@ -22,7 +22,7 @@ export const TabMenu = (props: TabMenuPropsType) => {
           return (
             <ListItem key={index}>
               <Link
-                active={true}
+                active={props.currentFilterStatus === item.status}
                 as={"button"}
                 onClick={() => {
                   props.changeFilterStatus(item.status);
