@@ -1,27 +1,26 @@
 import React from "react";
-import { S } from "./../HeaderMenu_Styles";
+import { S } from "../HeaderMenu_Styles";
 
-// const items = ["Home", "Skills", "Works", "Testimony", "Contacts"];
 const items = [
   {
     title: "Home",
-    href: "#home",
+    href: "home",
   },
   {
     title: "Skills",
-    href: "#skills",
+    href: "skills",
   },
   {
     title: "Works",
-    href: "#works",
+    href: "works",
   },
   {
     title: "Testimony",
-    href: "#testimony",
+    href: "testimony",
   },
   {
     title: "Contacts",
-    href: "#contacts",
+    href: "contacts",
   },
 ];
 
@@ -31,7 +30,13 @@ export const Menu: React.FC = () => {
       {items.map((item, index) => {
         return (
           <S.MenuItem key={index}>
-            <S.Link href={`${item.href}`}>
+            <S.NavLink
+              activeClass="active"
+              offset={-70}
+              spy={true}
+              smooth={true}
+              to={item.href}
+            >
               {item.title}
               <S.Mask>
                 <span>{item.title}</span>
@@ -39,7 +44,7 @@ export const Menu: React.FC = () => {
               <S.Mask>
                 <span>{item.title}</span>
               </S.Mask>
-            </S.Link>
+            </S.NavLink>
           </S.MenuItem>
         );
       })}
