@@ -27,6 +27,7 @@ const SocialList = styled.ul`
 `;
 
 const SocialItem = styled.li``;
+
 const SocialLink = styled.a`
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
@@ -35,7 +36,7 @@ const SocialLink = styled.a`
   display: flex;
   justify-content: center;
   align-items: center;
-
+  transition: ${theme.animation.transition};
   color: ${theme.colors.accent};
 
   &:hover {

@@ -36,14 +36,17 @@ const Image = styled.img`
   width: 100%;
   object-fit: cover;
 `;
+
 const ImageWrapper = styled.div`
   position: relative;
+
   ${Button} {
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -40%);
     opacity: 0;
+    transition: ${theme.animation.transition};
 
     &::before {
       width: 100%;
@@ -58,9 +61,10 @@ const ImageWrapper = styled.div`
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(4px);
     opacity: 0;
+    transition: ${theme.animation.transition};
   }
 
   &:hover {
@@ -70,6 +74,7 @@ const ImageWrapper = styled.div`
 
     ${Button} {
       opacity: 1;
+      transform: translate(-50%, -50%);
     }
   }
 

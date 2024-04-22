@@ -19,7 +19,7 @@ export const Link = styled.a<{ active?: boolean }>`
   &::before {
     content: " ";
     display: inline-block;
-    //height: 10px;
+    height: 0;
     background-color: ${theme.colors.accent};
 
     position: absolute;
@@ -27,6 +27,7 @@ export const Link = styled.a<{ active?: boolean }>`
     left: 0;
     right: 0;
     z-index: -1;
+    transition: ${theme.animation.transition};
 
     ${(props) =>
       props.active &&

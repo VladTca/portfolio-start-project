@@ -6,17 +6,17 @@ export const theme = {
 
     font: "#FFFFFF",
 
-    borderColor: '#4A4A4A',
-placeholderColor: '#495057',
-},
+    borderColor: "#4A4A4A",
+    placeholderColor: "#495057",
+  },
 
-  media:{
+  media: {
     mobile: "screen and (max-width: 576px)",
     tablet: "screen and (max-width: 768px)",
     desktop: "screen and (max-width: 1140px)",
-  }
+  },
 
-
-
-
+  animation: {
+    transition: " 0.2s ease-in-out",
+  },
 };
