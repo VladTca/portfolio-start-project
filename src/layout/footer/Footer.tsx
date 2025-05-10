@@ -22,7 +22,7 @@ export const Footer: React.FC = () => {
   return (
     <S.Footer>
       <FlexWrapper direction={"column"} align={"center"}>
-        <S.Name>Svetlana</S.Name>
+        <S.Name>Vladimir</S.Name>
         <S.SocialList>
           {SocialItemsData.map((s, index) => {
             return (
@@ -39,7 +39,7 @@ export const Footer: React.FC = () => {
             );
           })}
         </S.SocialList>
-        <S.Copyright>© 2023 Svetlana Dyablo, All Rights Reserved.</S.Copyright>
+        <S.Copyright>© 2023 Vladimir Tcaciuc, All Rights Reserved.</S.Copyright>
       </FlexWrapper>
     </S.Footer>
   );

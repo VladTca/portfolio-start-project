@@ -1,6 +1,6 @@
 import React from "react";
 import Typewriter from "typewriter-effect";
-import photo from "../../../assets/images/sveta.webp";
+import photo from "../../../assets/images/mf1.jpg";
 import { FlexWrapper } from "../../../components/FlexWrapper";
 import { Container } from "../../../components/Container";
 import { S } from "./Main_Styles";
@@ -14,7 +14,7 @@ export const Main: React.FC = () => {
           <div>
             <S.SmallText>Hi There</S.SmallText>
             <S.Name>
-              I am <span>Svetlana Dyablo</span>
+              I am <span>Vladimir Tcaciuc</span>
             </S.Name>
             <S.MainTitle>
               <p>A Web Developer. </p>
